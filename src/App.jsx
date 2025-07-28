@@ -3,12 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import mylogo from './assets/youtube.png'
 import './App.css'
+import Navbar from './Navbar/Navbar.jsx'
+import Home from './Home/Home.jsx'
+import Parent1 from './components/ParentComponent.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Navbar />
+      <Home />
+      <Parent1 />
       <div class = "d-flex justify-content-md-end">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
